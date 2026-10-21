@@ -1,98 +1,113 @@
-import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AnimatedIcon } from '@/components/animated-icon';
-import { HintRow } from '@/components/hint-row';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { useState } from "react";
+import { Link } from "expo-router";
+import {
+  View,
+  Text,
+  FlatList,
+  Pressable,
+  StyleSheet,
+} from "react-native";
 
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+import Karta from "../components/Karta";
+import { lessons } from "../data/lessons";
 
 export default function HomeScreen() {
+  const [calculusOnly, setCalculusOnly] = useState(false);
+
+  const visibleLessons = calculusOnly
+    ? lessons.filter((item) => item.category === "Calculus")
+    : lessons;
+
   return (
-    <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.heroSection}>
-          <AnimatedIcon />
-          <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Thesar KINGU!
-          </ThemedText>
-        </ThemedView>
+    <View style={styles.container}>
+      <Text style={styles.logo}>SCREAMULUS</Text>
 
-        <ThemedText type="code" style={styles.code}>
-          get started
-        </ThemedText>
+      <Text style={styles.title}>
+        Mathematics, but louder.
+      </Text>
 
-        <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
-          />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
+      <Text style={styles.subtitle}>
+        Explore mathematical ideas before turning
+        them into sound and motion.
+      </Text>
 
-        {Platform.OS === 'web' && <WebBadge />}
-      </SafeAreaView>
-    </ThemedView>
+      <Pressable
+        style={styles.filter}
+        onPress={() => setCalculusOnly(!calculusOnly)}
+      >
+        <Text style={styles.filterText}>
+          {calculusOnly
+            ? "Show all lessons"
+            : "Show calculus only"}
+        </Text>
+      </Pressable>
+
+      <FlatList
+        data={visibleLessons}
+        keyExtractor={(item) => item.id}
+        contentContainerStyle={styles.list}
+        renderItem={({ item }) => (
+          <Link
+            href={{
+              pathname: "/artikull/[id]",
+              params: { id: item.id },
+            }}
+            asChild
+          >
+            <Pressable>
+              <Karta
+                title={item.title}
+                category={item.category}
+                summary={item.summary}
+              />
+            </Pressable>
+          </Link>
+        )}
+      />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
+    backgroundColor: "#0b1020",
+    paddingHorizontal: 20,
+    paddingTop: 24,
   },
-  safeArea: {
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    alignItems: 'center',
-    gap: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.three,
-    maxWidth: MaxContentWidth,
-  },
-  heroSection: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.four,
+  logo: {
+    color: "#a78bfa",
+    fontSize: 14,
+    fontWeight: "bold",
+    letterSpacing: 3,
+    marginBottom: 14,
   },
   title: {
-    textAlign: 'center',
+    color: "#ffffff",
+    fontSize: 27,
+    fontWeight: "bold",
+    marginBottom: 10,
   },
-  code: {
-    textTransform: 'uppercase',
+  subtitle: {
+    color: "#94a3b8",
+    fontSize: 14,
+    lineHeight: 22,
+    marginBottom: 20,
   },
-  stepContainer: {
-    gap: Spacing.three,
-    alignSelf: 'stretch',
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.four,
-    borderRadius: Spacing.four,
+  filter: {
+    backgroundColor: "#312e81",
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 12,
+    alignSelf: "flex-start",
+    marginBottom: 14,
+  },
+  filterText: {
+    color: "#ffffff",
+    fontWeight: "600",
+  },
+  list: {
+    paddingBottom: 32,
   },
 });
