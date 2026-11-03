@@ -2,6 +2,8 @@
 
 Statusi: draft i sinqerte para bisedave. Pjesa e deshmise duhet perditesuar pasi te mblidhen tri bisedat reale.
 
+Per nje variant demonstrues te lidhur me biseda te trilluara, shih [pitch-in me deshmi fiktive ne SHEMBUJ.md](SHEMBUJ.md).
+
 ## 1. Kush
 
 Screamulus eshte per studentet qe po mesojne funksionet dhe grafiket dhe duan ta kuptojne lidhjen mes formules dhe asaj qe shohin ne ekran.

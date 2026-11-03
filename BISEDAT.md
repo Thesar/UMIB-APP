@@ -2,6 +2,8 @@
 
 Statusi: bisedat ende nuk jane zhvilluar. Tri seksionet me poshte jane formulare bosh, jo deshmi te mbledhura.
 
+Per ta pare formatin te plotesuar, shih [tri bisedat me te dhena fiktive ne SHEMBUJ.md](SHEMBUJ.md). Ato jane vetem shembuj.
+
 ## Me ke do te flasim
 
 Kerkojme tre studente qe kane hasur realisht veshtiresi me funksionet ose grafiket gjate nje ushtrimi, detyre apo pergatitjeje per provim. Secili duhet te pershkruaje nje rast konkret nga e kaluara.

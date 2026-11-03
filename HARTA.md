@@ -2,6 +2,8 @@
 
 Statusi: propozim per MVP. Do ta rishikojme pas tri bisedave reale.
 
+[SHEMBUJ.md](SHEMBUJ.md) tregon, me biseda te trilluara, si mund te lidhen shenimet e bisedave me vendimet per MVP-ne.
+
 ## Puna e vetme e aplikacionit
 
 Te ndihmoje studentin te lidhe nje formule me grafikun e saj, duke krijuar nje grafik te thjeshte me ze dhe anim te telefonit dhe duke pare cfare ndryshoi.

@@ -35,5 +35,6 @@ University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for t
 - [BISEDAT.md](BISEDAT.md): interview questions and three unfilled interview records.
 - [HARTA.md](HARTA.md): proposed MVP, four-screen flow, and scope.
 - [PITCH.md](PITCH.md): five-part pitch, rehearsal log, and phone demo guide.
+- [SHEMBUJ.md](SHEMBUJ.md): fictional interview examples, sample product decisions, and a matching demonstration pitch.
 
 These documents are drafts. The three real interviews, route selection, collaborator access, and timed pitch rehearsals are still pending.
