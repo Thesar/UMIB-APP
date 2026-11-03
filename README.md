@@ -37,4 +37,4 @@ University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for t
 - [PITCH.md](PITCH.md): five-part pitch, rehearsal log, and phone demo guide.
 - [SHEMBUJ.md](SHEMBUJ.md): fictional interview examples, sample product decisions, and a matching demonstration pitch.
 
-These documents are drafts. The three real interviews, route selection, collaborator access, and timed pitch rehearsals are still pending.
+These documents are drafts. The repository is public, and Amruke1 has been invited as a collaborator. Invitation acceptance, the official route number, three real interviews, and timed pitch rehearsals are still pending.

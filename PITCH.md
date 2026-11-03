@@ -28,6 +28,10 @@ Na duhen tre studente qe e kane hasur kete veshtiresi, per te degjuar rastet e t
 
 Lexoni pese pjeset si nje fjalim te vetem. Synoni rreth nje minute; shkurtoni tekstin sipas kohes reale. Nuk eshte matur ende.
 
+Ndarja orientuese e minutes: kush 10 sekonda, problemi 10, deshmia 15, puna e vetme 15 dhe cka na duhet 10. Keto jane objektiva per proven, jo kohe te matura.
+
+Ne proven e pare, nisni kronometrin me fjalen e pare dhe ndaleni me te fundit. Shenoni kohen dhe nje fjali qe mund te shkurtohet. Ne proven e dyte, lexoni versionin e rishikuar me ze dhe shenoni kohen e re.
+
 | Prova me ze | Koha reale | Cfare duhet ndryshuar |
 | --- | --- | --- |
 | 1 | [Per t'u matur] | [Per t'u plotesuar] |
