@@ -1,6 +1,6 @@
 # Harta e produktit - Screamulus
 
-Statusi: propozim per MVP. Do ta rishikojme pas tri bisedave reale.
+Statusi: propozim per MVP, me nje bisede te shenuar. Do ta rishikojme pas dy bisedave te tjera.
 
 [SHEMBUJ.md](SHEMBUJ.md) tregon si mund te lidhen shenimet e bisedave me vendimet per MVP-ne.
 
@@ -14,7 +14,7 @@ Te ndihmoje studentin te lidhe nje formule me grafikun e saj, duke krijuar nje g
 
 ## Problemi qe po verifikojme
 
-Supozimi yne eshte se disa studente e njohin formulen, por e kane te veshtire te shpjegojne si ndryshon forma e grafikut. Bisedat duhet te na tregojne kur ndodh kjo, si e zgjidhin sot dhe sa kohe u merr. Ende nuk kemi deshmi nga perdoruesit.
+Supozimi yne eshte se disa studente e njohin formulen, por e kane te veshtire te shpjegojne si ndryshon forma e grafikut. Ne biseden e pare, nje student i ekipit pershkroi ngaterrimin mes lartesise dhe perseritjes se vales, si dhe perdorimin e AI per ta zgjidhur ushtrimin. Dy bisedat e tjera duhet te na ndihmojne te kuptojme nese ky problem perseritet dhe si e zgjidhin studentet jashte ekipit.
 
 ## Rrjedha kryesore: 4 ekrane
 

@@ -1,28 +1,28 @@
 # Pitch nje-minutesh - Screamulus
 
-Statusi: draft para bisedave. Pjesa e deshmise duhet perditesuar pasi te mblidhen tri bisedat reale.
+Statusi: draft pas bisedes se pare. Pjesa e deshmise do te rishikohet pas dy bisedave te tjera.
 
 Per nje variant demonstrues, shih [shembullin e pitch-it ne SHEMBUJ.md](SHEMBUJ.md).
 
 ## 1. Kush
 
-Screamulus eshte per studentet qe po mesojne funksionet dhe grafiket dhe duan ta kuptojne lidhjen mes formules dhe asaj qe shohin ne ekran.
+Screamulus eshte per studentet qe mesojne funksionet, por e kane te veshtire ta lidhin formulen me grafikun.
 
 ## 2. Problemi
 
-Supozimi yne eshte se nje formule e lexuar ne liber nuk mjafton gjithmone per te kuptuar pse grafiku ndryshon. Duam te kuptojme ku ngecin studentet gjate ushtrimeve konkrete.
+Kur ndryshon nje vlere ne formule, nuk eshte gjithmone e qarte pse grafiku behet me i larte ose zhvendoset.
 
 ## 3. Deshmia
 
-Kemi ndertuar nje prototip me gjashte tema, nje filter dhe faqe me formula e shpjegime. Ky eshte progres ne ndertim. Tri bisedat me studentet ende nuk jane bere, prandaj problemin nuk e quajme te verifikuar.
+Ne biseden e pare, nje student i ekipit e zgjidhi me AI nje ushtrim per amplituden, pa shpenzim, por e pershkroi mesimin si joargetues. Versioni aktual i aplikacionit ka gjashte tema per demonstrim.
 
 ## 4. Puna e vetme
 
-MVP-ja do ta lejoje studentin te krijoje nje grafik te thjeshte me ze dhe anim te telefonit, pastaj te shpjegoje cfare ndryshoi. Kamera dhe galeria mbeten per me vone.
+Puna e vetme e MVP-se eshte qe studenti te ndryshoje nje grafik me ze dhe anim te telefonit dhe te shpjegoje cfare ndryshoi.
 
 ## 5. Cka na duhet
 
-Na duhen tre studente qe e kane hasur kete veshtiresi, per te degjuar rastet e tyre dhe per ta pershtatur proven me problemin real.
+Na duhen edhe dy biseda me studente, nje prove e rrjedhes dhe feedback nga profesori per fokusin.
 
 ## Provat me kronometer
 

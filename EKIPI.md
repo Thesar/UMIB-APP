@@ -32,7 +32,7 @@ Screamulus e ndihmon studentin te kuptoje nje grafik matematikor duke pare si nd
 
 Student qe po meson funksionet dhe grafiket dhe ka veshtiresi ta lidhe formulen me formen e grafikut.
 
-Ky eshte roli qe do te kerkojme per bisedat e para; nevoja ende nuk eshte verifikuar me biseda reale.
+Ky eshte roli i perdoruesit te pare. Nje bisede me nje student te ekipit eshte shenuar ne BISEDAT.md; mbeten dy biseda me studente te tjere.
 
 ## Para dorezimit
 
@@ -46,3 +46,4 @@ Ky eshte roli qe do te kerkojme per bisedat e para; nevoja ende nuk eshte verifi
 - [ ] Kontrolloni ne telefon rrjedhen lista > detajet dhe pergatitni shpjegimin per check-off.
 - [x] Ruani draftet e dokumenteve me commit dhe push ne GitHub.
 - [ ] Pas bisedave dhe provave me ze, beni commit dhe push te versionit perfundimtar.
+- [ ] Secili anetar te dorezoje linkun e repository-t dhe nje screenshot nga telefoni ne Student Hub; teksti eshte ne DOREZIM.md.
