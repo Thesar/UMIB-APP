@@ -1,6 +1,6 @@
 # Harta e produktit - Screamulus
 
-Statusi: propozim per MVP, i rishikuar me dy rastet e para. Rasti i trete ka ende detaje per t'u plotesuar.
+Statusi: propozim per MVP, i rishikuar sipas tri shenimeve ne BISEDAT.md.
 
 [SHEMBUJ.md](SHEMBUJ.md) tregon si mund te lidhen shenimet e bisedave me vendimet per MVP-ne.
 
@@ -14,7 +14,7 @@ Te ndihmoje studentin te lidhe nje formule me grafikun e saj, duke krijuar nje g
 
 ## Problemi qe po verifikojme
 
-Supozimi yne eshte se disa studente e njohin formulen, por e kane te veshtire te shpjegojne si ndryshon forma e grafikut. Ne biseden e pare, nje student i ekipit pershkroi ngaterrimin mes lartesise dhe perseritjes se vales, si dhe perdorimin e AI per ta zgjidhur ushtrimin. Ne rastin e dyte, nje student pershkroi veshtiresi me kuptimin gjate pergatitjes per test dhe mesimit permendesh. Kjo na orienton drejt nje prove ku studenti e ndryshon grafikun dhe e shpjegon me fjalet e veta. Duhet ende plotesuar rasti konkret i studentit te trete.
+Supozimi yne eshte se disa studente e njohin formulen, por e kane te veshtire te shpjegojne si ndryshon forma e grafikut. Ne biseden e pare, nje student i ekipit pershkroi ngaterrimin mes lartesise dhe perseritjes se vales, si dhe perdorimin e AI per ta zgjidhur ushtrimin. Dy shenimet e tjera lidhen me pergatitjen per testet e 23 dhe 26 tetorit, veshtiresine me kuptimin dhe mesimin permendesh. Shenimi i trete nuk jep nje ushtrim te vecante. Kjo na orienton drejt nje prove ku studenti e ndryshon grafikun dhe e shpjegon me fjalet e veta, duke mbledhur edhe hollesite qe mungojne.
 
 ## Rrjedha kryesore: 4 ekrane
 

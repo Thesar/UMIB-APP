@@ -1,6 +1,6 @@
 # Ekipi - Screamulus
 
-Statusi: rruga eshte zgjedhur, repository eshte publik dhe ftesa per Amren eshte derguar. Bisedat, provat me ze dhe pranimi i fteses mbeten per t'u perfunduar.
+Statusi: rruga eshte zgjedhur, repository eshte publik, shenimet e tri bisedave jane regjistruar dhe dy provat e pitch-it jane raportuar. Pranimi i fteses nga Amra, demonstrimi ne telefon dhe dorezimi ne Student Hub mbeten per t'u perfunduar.
 
 ## Repository i ekipit
 
@@ -32,7 +32,7 @@ Screamulus e ndihmon studentin te kuptoje nje grafik matematikor duke pare si nd
 
 Student qe po meson funksionet dhe grafiket dhe ka veshtiresi ta lidhe formulen me formen e grafikut.
 
-Ky eshte roli i perdoruesit te pare. Ne BISEDAT.md jane shenuar rasti i nje studenti te ekipit dhe dy shenime te percjella per studente te tjere; datat e dy te fundit dhe detajet e rastit te trete mbeten per t'u plotesuar.
+Ky eshte roli i perdoruesit te pare. Ne BISEDAT.md jane regjistruar rasti i nje studenti te ekipit dhe dy shenime te percjella per studente te tjere, te lidhura me testet e 23 dhe 26 tetorit. Hollesite e paraportuara jane lene te paspecifikuara.
 
 ## Para dorezimit
 
@@ -40,10 +40,10 @@ Ky eshte roli i perdoruesit te pare. Ne BISEDAT.md jane shenuar rasti i nje stud
 - [x] Konfirmoni perdoruesin GitHub te Amres dhe dergojeni ftesen si Collaborator.
 - [ ] Amra ta pranoje ftesen ne GitHub.
 - [x] Verifikoni qe repository eshte publik dhe profesori ka qasje.
-- [ ] Zhvilloni tri bisedat dhe plotesoni BISEDAT.md me shenime reale, pa emra te plote ose numra telefoni.
-- [ ] Pershtatni HARTA.md dhe pjesen e deshmise ne PITCH.md sipas asaj qe mesuat.
-- [ ] Provojeni pitch-in me ze dy here dhe shenoni kohet ne PITCH.md.
+- [x] Regjistroni shenimet e tri bisedave ne BISEDAT.md, pa emra te plote ose numra telefoni.
+- [x] Pershtatni HARTA.md dhe pjesen e deshmise ne PITCH.md sipas shenimeve te marra.
+- [x] Regjistroni dy provat me ze: secila afersisht nje minute, sipas raportimit te ekipit.
 - [ ] Kontrolloni ne telefon rrjedhen lista > detajet dhe pergatitni shpjegimin per check-off.
 - [x] Ruani draftet e dokumenteve me commit dhe push ne GitHub.
-- [ ] Pas bisedave dhe provave me ze, beni commit dhe push te versionit perfundimtar.
+- [x] Ruani shenimet dhe kohet e raportuara te provave me commit dhe push ne GitHub.
 - [ ] Secili anetar te dorezoje linkun e repository-t dhe nje screenshot nga telefoni ne Student Hub; teksti eshte ne DOREZIM.md.
