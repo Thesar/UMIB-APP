@@ -1,6 +1,6 @@
 # Pitch nje-minutesh - Screamulus
 
-Statusi: draft pas bisedes se pare. Pjesa e deshmise do te rishikohet pas dy bisedave te tjera.
+Statusi: draft i perditesuar me dy rastet e para. Rasti i trete ka ende detaje per t'u plotesuar.
 
 Per nje variant demonstrues, shih [shembullin e pitch-it ne SHEMBUJ.md](SHEMBUJ.md).
 
@@ -14,7 +14,7 @@ Kur ndryshon nje vlere ne formule, nuk eshte gjithmone e qarte pse grafiku behet
 
 ## 3. Deshmia
 
-Ne biseden e pare, nje student i ekipit e zgjidhi me AI nje ushtrim per amplituden, pa shpenzim, por e pershkroi mesimin si joargetues. Versioni aktual i aplikacionit ka gjashte tema per demonstrim.
+Nje student i ekipit e zgjidhi me AI nje ushtrim per amplituden, por e pershkroi mesimin si joargetues. Nje tjeter, para nje testi, shpenzonte me shume kohe duke mesuar permendesh pa e kuptuar mire materialin. Asnjeri nuk raportoi shpenzim ne para.
 
 ## 4. Puna e vetme
 
@@ -22,7 +22,7 @@ Puna e vetme e MVP-se eshte qe studenti te ndryshoje nje grafik me ze dhe anim t
 
 ## 5. Cka na duhet
 
-Na duhen edhe dy biseda me studente, nje prove e rrjedhes dhe feedback nga profesori per fokusin.
+Na duhet te plotesojme rastin e trete, te provojme rrjedhen me studente dhe te marrim feedback nga profesori per fokusin.
 
 ## Provat me kronometer
 

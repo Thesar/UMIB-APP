@@ -1,12 +1,12 @@
 # Bisedat - Screamulus
 
-Statusi: nje bisede e shenuar; mbeten dy biseda me studente te tjere.
+Statusi: tri shenime jane regjistruar. Datat e dy bisedave te fundit dhe rasti konkret i bisedes 3 mbeten per t'u plotesuar.
 
 Per formatin e shenimeve, shih [shembujt ne SHEMBUJ.md](SHEMBUJ.md).
 
 ## Me ke do te flasim
 
-Synojme tri biseda me studente qe kane hasur veshtiresi me funksionet ose grafiket gjate nje ushtrimi, detyre apo pergatitjeje per provim. Biseda e pare eshte me nje student te ekipit; dy te tjerat do te jene me studente te tjere. Secili pershkruan nje rast konkret nga e kaluara.
+Shenimet lidhen me studente qe kane hasur veshtiresi gjate mesimit te matematikes ose pergatitjes per test. Biseda e pare eshte me nje student te ekipit; shenimet e dy te tjerave jane percjelle nga ekipi. Per secilin rast kerkojme ngjarjen konkrete, menyren e zgjidhjes dhe kohen ose shpenzimin.
 
 ## Pyetjet
 
@@ -28,28 +28,32 @@ Cka i kushtoi: Nuk shpenzoi para. Tha se nuk i mori shume kohe, por nuk dha nje 
 
 Cka nuk e dinim: Marrja e shpejte e nje zgjidhjeje nga AI nuk i dha pervojen e te mesuarit qe kerkonte. Ne proven e aplikacionit duhet te shohim nese ndryshimi i grafikut e ndihmon ta shpjegoje amplituden dhe nese e gjen pervojen terheqese.
 
-## Biseda 2 · [data reale] · [roli]
+## Biseda 2 · data e bisedes per t'u konfirmuar · student qe pergatitej per test matematike
 
-Hera e fundit: [Kur ndodhi, cili ishte ushtrimi dhe cila pjese e bllokoi.]
+Shenimi u percjell me 03.11.2026.
 
-Si e zgjidhi: [Hapat, mjetet dhe ndihma qe perdori realisht.]
+Hera e fundit: Gjate pergatitjes per nje test matematike, studenti nuk po e kuptonte materialin vetem duke e studiuar ose mesuar permendesh.
 
-Cka i kushtoi: [Koha ose parate qe raportoi; "nuk e di" nese nuk dha nje vleresim.]
+Si e zgjidhi: U perpoq duke studiuar dhe mesuar permendesh. Nuk u pershkrua nje menyre tjeter qe e zgjidhi perfundimisht veshtiresine.
 
-Cka nuk e dinim: [Nje gje konkrete qe mesuam nga kjo bisede.]
+Cka i kushtoi: Nuk shpenzoi para, por tha se kerkonte shume me teper kohe. Nuk u dha nje numer minutash.
 
-## Biseda 3 · [data reale] · [roli]
+Cka nuk e dinim: Riperseritja dhe mesimi permendesh nuk mjaftuan qe ky student ta kuptonte materialin. Ne testimin e produktit duhet te kerkojme nje shpjegim me fjalet e tij, jo vetem riprodhimin e formules.
 
-Hera e fundit: [Kur ndodhi, cili ishte ushtrimi dhe cila pjese e bllokoi.]
+## Biseda 3 · data e bisedes per t'u konfirmuar · student
 
-Si e zgjidhi: [Hapat, mjetet dhe ndihma qe perdori realisht.]
+Shenimi u percjell me 03.11.2026.
 
-Cka i kushtoi: [Koha ose parate qe raportoi; "nuk e di" nese nuk dha nje vleresim.]
+Hera e fundit: U raportua nje veshtiresi e ngjashme me rastin e mesimit te matematikes te biseda 2. Ushtrimi, tema dhe ngjarja konkrete ende nuk jane specifikuar.
 
-Cka nuk e dinim: [Nje gje konkrete qe mesuam nga kjo bisede.]
+Si e zgjidhi: Ende nuk eshte specifikuar.
+
+Cka i kushtoi: Nuk shpenzoi para. Koha nuk u specifikua.
+
+Cka nuk e dinim: Shenimi aktual nuk mjafton per te nxjerre nje mesim te vecante nga ky rast. Duhet plotesuar me nje shembull konkret dhe menyren si studenti e trajtoi veshtiresine.
 
 ## Pas tri bisedave
 
-- Cili problem u perserit? [Per t'u plotesuar nga shenimet.]
-- Cili rast nuk perputhej me supozimin tone? [Per t'u plotesuar.]
-- Cfare do te ndryshojme ne MVP? [Per t'u plotesuar ne HARTA.md.]
+- Cili problem po shfaqet? Dy rastet e para tregojne veshtiresi me kuptimin, edhe kur studenti ka nje formule, nje zgjidhje nga AI ose kohe per te studiuar.
+- Cili dallim ka rendesi? Ne rastin e pare zgjidhja erdhi shpejt nga AI; ne te dytin, studimi dhe mesimi permendesh kerkonin me shume kohe. Nuk duhet te supozojme se te gjithe kane te njejten veshtiresi.
+- Cfare do te provojme ne MVP? Nje ushtrim te shkurter per amplituden, ku studenti e ndryshon grafikun dhe pastaj shpjegon cfare ndodhi. Perfundojme rishikimin pasi te plotesohet rasti i trete.

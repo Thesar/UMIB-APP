@@ -32,7 +32,7 @@ University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for t
 ## Product Planning
 
 - [EKIPI.md](EKIPI.md): team, project idea, and first user role.
-- [BISEDAT.md](BISEDAT.md): interview questions, one recorded conversation, and two interview forms.
+- [BISEDAT.md](BISEDAT.md): interview questions and three sets of notes, with remaining follow-up details marked.
 - [HARTA.md](HARTA.md): proposed MVP, four-screen flow, and scope.
 - [PITCH.md](PITCH.md): five-part pitch, rehearsal log, and phone demo guide.
 - [DOREZIM.md](DOREZIM.md): submission text and the required phone screenshot attachment.
@@ -40,7 +40,7 @@ University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for t
 
 The team has selected **Route 1 - For ourselves**, matching the study-app track in the [official project plan](https://artifacts.agonbajgora.com/s/V5rlkg6yvdJqqCGJlpr-o1WZKnnPVvBHopCHDgpTh_Y/projekti.html). This track requires at least 10 real users each week during weeks 10-12.
 
-These documents are drafts. The repository is public, and Amruke1 has been invited as a collaborator. One conversation with a student on the team is recorded. Invitation acceptance, two further student conversations, and timed pitch rehearsals are still pending.
+These documents are drafts. The repository is public, and Amruke1 has been invited as a collaborator. The interview notes are recorded; dates for the last two conversations and the third student's specific case still need follow-up. Invitation acceptance and timed pitch rehearsals are also pending.
 
 ## AI Assistance
 

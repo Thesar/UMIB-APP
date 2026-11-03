@@ -32,7 +32,7 @@ Screamulus e ndihmon studentin te kuptoje nje grafik matematikor duke pare si nd
 
 Student qe po meson funksionet dhe grafiket dhe ka veshtiresi ta lidhe formulen me formen e grafikut.
 
-Ky eshte roli i perdoruesit te pare. Nje bisede me nje student te ekipit eshte shenuar ne BISEDAT.md; mbeten dy biseda me studente te tjere.
+Ky eshte roli i perdoruesit te pare. Ne BISEDAT.md jane shenuar rasti i nje studenti te ekipit dhe dy shenime te percjella per studente te tjere; datat e dy te fundit dhe detajet e rastit te trete mbeten per t'u plotesuar.
 
 ## Para dorezimit
 
