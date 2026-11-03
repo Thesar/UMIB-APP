@@ -27,4 +27,13 @@ The first version contains a list of mathematical lessons, reusable cards, and d
 
 ## Developer
 
-Individual university coursework project.
+University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for team details.
+
+## Product Planning
+
+- [EKIPI.md](EKIPI.md): team, project idea, and first user role.
+- [BISEDAT.md](BISEDAT.md): interview questions and three unfilled interview records.
+- [HARTA.md](HARTA.md): proposed MVP, four-screen flow, and scope.
+- [PITCH.md](PITCH.md): five-part pitch, rehearsal log, and phone demo guide.
+
+These documents are drafts. The three real interviews, route selection, collaborator access, and timed pitch rehearsals are still pending.
