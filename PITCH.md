@@ -1,8 +1,8 @@
 # Pitch nje-minutesh - Screamulus
 
-Statusi: draft i sinqerte para bisedave. Pjesa e deshmise duhet perditesuar pasi te mblidhen tri bisedat reale.
+Statusi: draft para bisedave. Pjesa e deshmise duhet perditesuar pasi te mblidhen tri bisedat reale.
 
-Per nje variant demonstrues te lidhur me biseda te trilluara, shih [pitch-in me deshmi fiktive ne SHEMBUJ.md](SHEMBUJ.md).
+Per nje variant demonstrues, shih [shembullin e pitch-it ne SHEMBUJ.md](SHEMBUJ.md).
 
 ## 1. Kush
 

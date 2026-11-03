@@ -2,7 +2,11 @@
 
 Statusi: propozim per MVP. Do ta rishikojme pas tri bisedave reale.
 
-[SHEMBUJ.md](SHEMBUJ.md) tregon, me biseda te trilluara, si mund te lidhen shenimet e bisedave me vendimet per MVP-ne.
+[SHEMBUJ.md](SHEMBUJ.md) tregon si mund te lidhen shenimet e bisedave me vendimet per MVP-ne.
+
+## Rruga e projektit
+
+Rruga 1 - Per veten: nje aplikacion studimi per ne dhe studentet e tjere. Sipas [planit te projektit](https://artifacts.agonbajgora.com/s/V5rlkg6yvdJqqCGJlpr-o1WZKnnPVvBHopCHDgpTh_Y/projekti.html), synojme se paku 10 perdorues te vertete cdo jave ne javet 10-12.
 
 ## Puna e vetme e aplikacionit
 
@@ -41,7 +45,18 @@ Lista dhe detajet jane ne kodin aktual. Scream Studio, butoni per eksperimentin 
 - Gjenerimi i zerit nga nje grafik.
 - Analiza interaktive e derivateve, integraleve dhe sfidat me pikezim; mesimet ekzistuese mund te mbeten si tekst.
 - Galeria, ruajtja e performances, eksporti video dhe shperndarja ne rrjete sociale.
-- Llogarite e perdoruesve, pagesat, renditjet dhe funksionet sociale.
+- Pagesat, renditjet dhe funksionet sociale.
+
+## Kerkesat e semestrit
+
+Harta me lart pershkruan rrjedhen kryesore te te mesuarit. Projekti do te perfshije edhe kerkesat e perbashketa te lendes:
+
+- Backend ne Supabase, hyrje ne llogari dhe rregulla qe secili perdorues te shohe vetem te dhenat e veta, gjate javeve 5-8.
+- Nje funksion me AI qe ndihmon ne shpjegimin e grafikut, i thirrur nga serveri dhe me celesin vetem ne server, ne javen 9.
+- Gjendjet ngarkim, bosh, gabim dhe sukses, bashke me sjelljen kur rrjeti, lejet ose AI nuk jane ne dispozicion.
+- APK per telefon, deklarim te perdorimit te AI, video dhe demonstrim sipas planit te semestrit.
+
+Keto pjese jane te planifikuara dhe ende nuk jane ndertuar.
 
 ## Si do ta provojme
 

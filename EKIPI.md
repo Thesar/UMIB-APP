@@ -1,6 +1,6 @@
 # Ekipi - Screamulus
 
-Statusi: draft. Repository eshte publik dhe ftesa per Amren eshte derguar. Numri zyrtar i rruges dhe pranimi i fteses mbeten per t'u konfirmuar.
+Statusi: rruga eshte zgjedhur, repository eshte publik dhe ftesa per Amren eshte derguar. Bisedat, provat me ze dhe pranimi i fteses mbeten per t'u perfunduar.
 
 ## Repository i ekipit
 
@@ -18,11 +18,11 @@ https://github.com/Thesar/UMIB-APP
 
 ## Rruga
 
-Drejtimi i zgjedhur: aplikacion edukativ interaktiv per matematike, qe perdor zerin dhe animin e telefonit per ta lidhur formulen me grafikun.
+**Rruga 1 - Per veten.**
 
-Ky drejtim i pershtatet idese se Screamulus dhe lejon nje MVP te fokusuar te amplituda. Perdoruesit e pare jane studente me te cilet mund ta provojme rrjedhen ne telefon.
+Screamulus eshte nje aplikacion studimi per ne dhe studentet e tjere. Kjo rruge i pershtatet perdoruesit te pare dhe idese sone: te lidhim formulen me grafikun duke perdorur zerin dhe animin e telefonit.
 
-Numri zyrtar 1, 2 ose 3 mbetet per t'u vendosur pasi te kemi pershkrimet e tri rrugeve te profesorit.
+Sipas [planit zyrtar te projektit](https://artifacts.agonbajgora.com/s/V5rlkg6yvdJqqCGJlpr-o1WZKnnPVvBHopCHDgpTh_Y/projekti.html), kjo rruge kerkon se paku 10 perdorues te vertete cdo jave ne javet 10-12. Ky eshte objektivi yne i perdorimit; ende nuk eshte arritur. Ideja do te paraqitet per miratim ne javen 4.
 
 ## Ideja ne nje fjali
 
@@ -36,7 +36,7 @@ Ky eshte roli qe do te kerkojme per bisedat e para; nevoja ende nuk eshte verifi
 
 ## Para dorezimit
 
-- [ ] Plotesoni rrugen sipas udhezimit te profesorit.
+- [x] Zgjidhni rrugen sipas udhezimit te profesorit: Rruga 1 - Per veten.
 - [x] Konfirmoni perdoruesin GitHub te Amres dhe dergojeni ftesen si Collaborator.
 - [ ] Amra ta pranoje ftesen ne GitHub.
 - [x] Verifikoni qe repository eshte publik dhe profesori ka qasje.

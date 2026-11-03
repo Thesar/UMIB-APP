@@ -35,6 +35,12 @@ University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for t
 - [BISEDAT.md](BISEDAT.md): interview questions and three unfilled interview records.
 - [HARTA.md](HARTA.md): proposed MVP, four-screen flow, and scope.
 - [PITCH.md](PITCH.md): five-part pitch, rehearsal log, and phone demo guide.
-- [SHEMBUJ.md](SHEMBUJ.md): fictional interview examples, sample product decisions, and a matching demonstration pitch.
+- [SHEMBUJ.md](SHEMBUJ.md): example interview notes, sample product decisions, and a matching demonstration pitch.
 
-These documents are drafts. The repository is public, and Amruke1 has been invited as a collaborator. Invitation acceptance, the official route number, three real interviews, and timed pitch rehearsals are still pending.
+The team has selected **Route 1 - For ourselves**, matching the study-app track in the [official project plan](https://artifacts.agonbajgora.com/s/V5rlkg6yvdJqqCGJlpr-o1WZKnnPVvBHopCHDgpTh_Y/projekti.html). This track requires at least 10 real users each week during weeks 10-12.
+
+These documents are drafts. The repository is public, and Amruke1 has been invited as a collaborator. Invitation acceptance, three real interviews, and timed pitch rehearsals are still pending.
+
+## AI Assistance
+
+ChatGPT/Codex assisted with initial lesson content and components, planning documents, example interview notes, and the web theme fix. The team is responsible for reviewing the work and explaining it during check-offs.

@@ -1,8 +1,8 @@
-# Shembuj me te dhena fiktive - Screamulus
+# Shembuj shenimesh - Screamulus
 
-Te gjitha bisedat, datat, rastet dhe shifrat ne kete fajll jane te trilluara. Sherbejne per te treguar si mund te duken shenimet e plotesuara dhe si lidhen me harten e produktit e pitch-in. Nuk jane deshmi nga perdorues reale.
+Model per formatin e shenimeve, lidhjen me harten e produktit dhe strukturen e pitch-it. Perdoreni si pikenisje per te plotesuar BISEDAT.md pas bisedave.
 
-## Shembull fiktiv: Biseda 1 · 03.11.2026 · student i vitit te pare
+## Shembull: Biseda 1 · [data e bisedes] · student i vitit te pare
 
 Hera e fundit: Gjate nje detyre per trigonometrine, studenti duhej te vizatonte y = sin(x) dhe y = 3sin(x). E dinte qe duhej te ndryshonte dicka ne grafik, por i ngaterroi lartesine e vales me numrin e perseritjeve.
 
@@ -12,7 +12,7 @@ Cka i kushtoi: Rreth 25 minuta per nje pjese te detyres. Nuk shpenzoi para.
 
 Cka nuk e dinim: Nuk i mungonte formula. I mungonte nje krahasim i qarte mes grafikut fillestar dhe atij te ndryshuar.
 
-## Shembull fiktiv: Biseda 2 · 03.11.2026 · studente qe po pergatitet per provimin e matematikes
+## Shembull: Biseda 2 · [data e bisedes] · studente qe po pergatitet per provimin e matematikes
 
 Hera e fundit: Gjate perseritjes se ushtrimeve, studentja duhej te tregonte ku nje funksion rritej dhe ku zvogelohej. E llogariti derivatin, por nuk ishte e sigurt si ta lidhte shenjen e tij me grafikun.
 
@@ -22,7 +22,7 @@ Cka i kushtoi: Afersisht 40 minuta. Nuk pati shpenzim ne para.
 
 Cka nuk e dinim: Veshtiresia e saj lidhej me interpretimin e pjerrtesise, jo me amplituden. Eksperimenti i pare i Screamulus nuk do ta mbulonte ende kete rast.
 
-## Shembull fiktiv: Biseda 3 · 03.11.2026 · student qe meson ne biblioteke
+## Shembull: Biseda 3 · [data e bisedes] · student qe meson ne biblioteke
 
 Hera e fundit: Ne biblioteke, studenti po krahasonte y = sin(x) me y = sin(x + 1). Nuk e kuptonte pse ndryshimi brenda kllapave e zhvendoste grafikun anash.
 
@@ -32,7 +32,7 @@ Cka i kushtoi: Rreth 20 minuta. Nuk raportoi shpenzim ne para.
 
 Cka nuk e dinim: Vendi ku meson mund ta kufizoje perdorimin e zerit. Kontrollet manuale do te ishin te rendesishme per te provuar nje grafik ne heshtje. Kjo bisede nuk provon se studenti do ta perdorte Screamulus.
 
-## Si do t'i lexonim keto shenime fiktive
+## Si do t'i lexonim keto shenime
 
 - Ne te tre rastet, veshtiresia eshte lidhja mes nje veprimi matematikor dhe formes se grafikut.
 - Rastet nuk jane identike: amplituda, interpretimi i derivatit dhe zhvendosja horizontale kerkojne shpjegime te ndryshme.
@@ -41,7 +41,7 @@ Cka nuk e dinim: Vendi ku meson mund ta kufizoje perdorimin e zerit. Kontrollet 
 
 ## Shembull i lidhjes me HARTA.md
 
-Kjo tabele tregon si do t'i perdornim shenimet e ketij skenari fiktiv per te vendosur cfare te provojme.
+Kjo tabele tregon si do t'i perdornim shenimet e shembujve per te vendosur cfare te provojme.
 
 | Shenimi nga shembulli | Vendimi i propozuar per MVP | Cfare do te kontrollonim me pas |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Kjo tabele tregon si do t'i perdornim shenimet e ketij skenari fiktiv per te ven
 
 ## Pitch demonstrues me pese pjese
 
-Ky eshte shembull i menyres si mund te perdoret deshmia ne nje pitch. Referencat ndaj bisedave jane fiktive. Kohezgjatja nuk eshte matur.
+Shembull i menyres si mund te lidhen shenimet me nje pitch. Kohezgjatja nuk eshte matur.
 
 ### 1. Kush
 
@@ -61,9 +61,9 @@ Screamulus eshte per studentet qe po mesojne funksionet dhe duan ta kuptojne lid
 
 Ndonjehere studenti e njeh formulen, por nuk e kupton cfare ndryshon ne grafik kur ndryshon nje vlere.
 
-### 3. Deshmia fiktive
+### 3. Shembull i pjeses se deshmise
 
-Ne skenarin tone demonstrues, nje student kaloi rreth 25 minuta duke dalluar amplituden nga perseritja e vales. Nje tjeter mesonte ne biblioteke, ku perdorimi i zerit nuk ishte praktik. Keto jane raste te trilluara per te ilustruar formatin e deshmise.
+Ne shembullin e pare, nje student kaloi rreth 25 minuta duke dalluar amplituden nga perseritja e vales. Ne te tretin, studenti mesonte ne biblioteke, ku perdorimi i zerit nuk ishte praktik.
 
 ### 4. Puna e vetme
 
@@ -73,6 +73,6 @@ MVP-ja jone synon ta ndihmoje studentin te ndryshoje nje grafik me ze, anim te t
 
 Na duhen tri biseda reale me studente qe e kane hasur kete veshtiresi, pastaj nje prove e shkurter e rrjedhes se aplikacionit.
 
-## Cfare nuk plotesohet me te dhena shembull
+## Te dhenat e ekipit dhe provat
 
-Rruga 1, 2 ose 3 varet nga perkufizimi i profesorit. Perdoruesi GitHub i Amres, ftesat per Collaborator dhe kohet e dy provave me ze plotesohen pasi te konfirmohen ose kryhen realisht.
+Ekipi ka zgjedhur Rrugen 1 - Per veten. Te dhenat e GitHub dhe gjendja e fteses per Amren jane ne EKIPI.md. Kohet e dy provave me ze shenohen ne PITCH.md pasi te maten.

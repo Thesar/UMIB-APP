@@ -1,8 +1,8 @@
 # Bisedat - Screamulus
 
-Statusi: bisedat ende nuk jane zhvilluar. Tri seksionet me poshte jane formulare bosh, jo deshmi te mbledhura.
+Statusi: per t'u plotesuar pas tri bisedave me studente.
 
-Per ta pare formatin te plotesuar, shih [tri bisedat me te dhena fiktive ne SHEMBUJ.md](SHEMBUJ.md). Ato jane vetem shembuj.
+Per formatin e shenimeve, shih [shembujt ne SHEMBUJ.md](SHEMBUJ.md).
 
 ## Me ke do te flasim
 
