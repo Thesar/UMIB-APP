@@ -1,12 +1,34 @@
 
 import { Link, useLocalSearchParams } from "expo-router";
+import { useCallback } from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 import { getLesson } from "../../data/lessons";
+import DataState from "../../components/DataState";
+import { useRemoteData } from "../../hooks/use-remote-data";
 
 export default function LessonDetails() {
-  const { id } = useLocalSearchParams<{ id: string }>();
-  const lesson = getLesson(id);
+  const { id } = useLocalSearchParams<{ id: string | string[] }>();
+  const lessonId = Array.isArray(id) ? id[0] : id;
+  const loadLesson = useCallback(
+    (signal: AbortSignal) => getLesson(lessonId ?? "", signal),
+    [lessonId],
+  );
+  const { data: lesson, loading, error, retry } = useRemoteData(loadLesson);
+
+  if (loading || error) {
+    return (
+      <View style={styles.container}>
+        <DataState
+          title={loading ? "Loading lesson…" : "Lesson unavailable"}
+          message={error ?? undefined}
+          loading={loading}
+          onRetry={loading ? undefined : retry}
+        />
+        <Link href="/" style={styles.back}>Back to lessons</Link>
+      </View>
+    );
+  }
 
   if (!lesson) {
     return (

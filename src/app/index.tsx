@@ -10,13 +10,16 @@ import {
 } from "react-native";
 
 import Karta from "../components/Karta";
-import { lessons } from "../data/lessons";
+import DataState from "../components/DataState";
+import { listLessons } from "../data/lessons";
+import { useRemoteData } from "../hooks/use-remote-data";
 
 export default function HomeScreen() {
   const [calculusOnly, setCalculusOnly] = useState(false);
+  const { data: lessons, loading, error, retry } = useRemoteData(listLessons);
 
   const visibleLessons = calculusOnly
-    ? lessons.filter((item) => item.category === "Calculus")
+    ? lessons?.filter((item) => item.category === "Calculus")
     : lessons;
 
   return (
@@ -33,8 +36,9 @@ export default function HomeScreen() {
       </Text>
 
       <Pressable
+        accessibilityRole="button"
         style={styles.filter}
-        onPress={() => setCalculusOnly(!calculusOnly)}
+        onPress={() => setCalculusOnly((value) => !value)}
       >
         <Text style={styles.filterText}>
           {calculusOnly
@@ -43,10 +47,24 @@ export default function HomeScreen() {
         </Text>
       </Pressable>
 
+      {lessons ? (
+        <Text style={styles.source}>{lessons.length} lessons · Live library</Text>
+      ) : null}
+
       <FlatList
-        data={visibleLessons}
+        data={visibleLessons ?? []}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.list}
+        refreshing={loading}
+        onRefresh={retry}
+        ListEmptyComponent={
+          <DataState
+            title={loading ? "Loading lessons…" : error ? "Lessons unavailable" : "No lessons yet"}
+            message={error ?? (!loading ? "Try another filter or refresh the list." : undefined)}
+            loading={loading}
+            onRetry={loading ? undefined : retry}
+          />
+        }
         renderItem={({ item }) => (
           <Link
             href={{
@@ -109,5 +127,10 @@ const styles = StyleSheet.create({
   },
   list: {
     paddingBottom: 32,
+  },
+  source: {
+    color: "#94a3b8",
+    fontSize: 12,
+    marginBottom: 14,
   },
 });
