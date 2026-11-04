@@ -16,7 +16,7 @@ Future features will include:
 
 ## Current Version
 
-The first version contains a list of mathematical lessons, reusable cards, and detailed explanations.
+The app loads its lesson list and details from Supabase. Students can save private study notes for a lesson using a persistent guest account. The microphone and phone-tilt Studio is still planned.
 
 ## Run on a Phone
 
@@ -24,6 +24,7 @@ This project uses Expo SDK 58 and is intended to open in Expo Go for SDK 58.
 
 ```sh
 npm ci
+# Configure .env.local as described in SUPABASE.md before starting.
 npx expo start --clear
 ```
 
@@ -35,6 +36,9 @@ On Windows PowerShell, use `npm.cmd` and `npx.cmd` if script execution is blocke
 - Expo
 - TypeScript
 - Expo Router
+- Supabase database and guest authentication
+
+See [SUPABASE.md](SUPABASE.md) for setup, data flow, privacy rules, and the phone screenshot steps. [PROGRES.md](PROGRES.md) records the current coursework missions and their verification status.
 
 ## Developer
 
@@ -55,4 +59,4 @@ The repository is public, and Amruke1 has been invited as a collaborator. Three 
 
 ## AI Assistance
 
-ChatGPT/Codex assisted with initial lesson content and components, planning documents, example interview notes, the web theme fix, and the SDK 58 upgrade. The team is responsible for reviewing the work and explaining it during check-offs.
+ChatGPT/Codex assisted with initial lesson content and components, planning documents, example interview notes, the web theme fix, the SDK 58 upgrade, and the Supabase integration. The team is responsible for reviewing the work and explaining it during check-offs.

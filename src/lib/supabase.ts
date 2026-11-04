@@ -1,7 +1,7 @@
 import 'react-native-url-polyfill/auto';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient } from '@supabase/supabase-js';
-import { Platform } from 'react-native';
+import { AppState, Platform } from 'react-native';
 
 import type { Database } from '@/types/database';
 
@@ -25,4 +25,22 @@ export function getSupabase() {
   }
 
   return supabase;
+}
+
+export function watchSessionRefresh() {
+  if (!supabase || Platform.OS === 'web') return;
+
+  const client = supabase;
+  const update = (state: typeof AppState.currentState) => {
+    if (state === 'active') client.auth.startAutoRefresh();
+    else client.auth.stopAutoRefresh();
+  };
+
+  update(AppState.currentState);
+  const subscription = AppState.addEventListener('change', update);
+
+  return () => {
+    subscription.remove();
+    client.auth.stopAutoRefresh();
+  };
 }

@@ -5,6 +5,7 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 import { getLesson } from "../../data/lessons";
 import DataState from "../../components/DataState";
+import StudyNotes from "../../components/StudyNotes";
 import { useRemoteData } from "../../hooks/use-remote-data";
 
 export default function LessonDetails() {
@@ -42,7 +43,7 @@ export default function LessonDetails() {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets>
       <Text style={styles.category}>{lesson.category}</Text>
 
       <Text style={styles.title}>{lesson.title}</Text>
@@ -56,6 +57,8 @@ export default function LessonDetails() {
       <Text style={styles.description}>
         {lesson.explanation}
       </Text>
+
+      <StudyNotes key={lesson.id} lessonId={lesson.id} />
 
       <Link href="/" style={styles.back}>
         ← Back to lessons

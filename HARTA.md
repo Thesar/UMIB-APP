@@ -29,6 +29,8 @@ Lista e temave > Detaji i temes > Scream Studio > Rezultati.
 
 Lista dhe detajet jane ne kodin aktual. Scream Studio, butoni per eksperimentin dhe rezultati jane te planifikuara; ende nuk jane ndertuar.
 
+Per detyren e Supabase (04.11.2026), lista dhe detajet lexohen nga databaza reale. Ne detaj shtohet nje shenim personal qe ruhet ne databaze me nje llogari guest dhe RLS sipas pronarit. Ky shenim sherben per te shpjeguar formulen ose per te mbajtur nje pyetje; nuk eshte ruajtje e performances se Studio-s. Prova ne telefon shenohet vecmas ne PROGRES.md.
+
 ## Brenda MVP-se
 
 - Lista dhe detajet ekzistuese si hyrje te shkurtra ne temat matematikore.
@@ -56,7 +58,7 @@ Harta me lart pershkruan rrjedhen kryesore te te mesuarit. Projekti do te perfsh
 - Gjendjet ngarkim, bosh, gabim dhe sukses, bashke me sjelljen kur rrjeti, lejet ose AI nuk jane ne dispozicion.
 - APK per telefon, deklarim te perdorimit te AI, video dhe demonstrim sipas planit te semestrit.
 
-Keto pjese jane te planifikuara dhe ende nuk jane ndertuar.
+Backend-i per mesimet, llogarite guest dhe shenimet personale me RLS jane ndertuar per detyren e Supabase. Hyrja me email, funksioni me AI, Studio me mikrofon/anim dhe APK-ja mbeten te planifikuara. Shih PROGRES.md per kontrollet e kryera dhe proven ne telefon.
 
 ## Si do ta provojme
 

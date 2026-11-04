@@ -1,7 +1,12 @@
 
 import { Stack } from "expo-router";
+import { useEffect } from "react";
+
+import { watchSessionRefresh } from "../lib/supabase";
 
 export default function RootLayout() {
+  useEffect(watchSessionRefresh, []);
+
   return (
     <Stack
       screenOptions={{
