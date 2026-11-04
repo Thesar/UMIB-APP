@@ -1,3 +1,23 @@
+# Screamulus: project context
+
+Source documents: `EKIPI.md`, `BISEDAT.md`, and `HARTA.md`. Read them before changing the product scope.
+
+- Team: Thesar and Amra (GitHub: Amruke1). Route 1, "Per veten".
+- First user: a student who struggles to connect a mathematical formula with its graph.
+- One job: help the student understand that connection by changing a simple graph with voice and phone tilt and explaining what changed.
+- Research: the first student confused amplitude with repetition and used AI for a quick answer. Other notes concern memorization and time spent preparing for October math tests. The third note lacks a specific exercise; do not invent missing evidence or interview details.
+- Planned flow: lesson list > lesson details > Scream Studio > result. The list and details exist; the microphone/tilt experiment and result screen are still planned.
+- MVP focuses on amplitude. Camera graph recognition, generated sound, social features, payments, and interactive calculus are outside the MVP.
+
+## Current Supabase assignment
+
+- M0: keep this product summary aligned with the source documents.
+- M1/M3: load the existing lesson list and details from Supabase, with loading, empty, failure, and retry states. Never silently replace a failed database read with hard-coded lessons.
+- M2: let a student save a personal study note linked to a lesson and read it after reopening. Use Supabase Auth and owner-based row level security for personal data.
+- Keep backend queries outside `src/app/`. Only route components belong there. Do not build the full Studio as part of this database assignment.
+- Commit after each completed step and review the diff. Update `PROGRES.md` with what is implemented, what is verified, what the agent did, and the next step. Do not claim phone verification without a real phone test.
+- Public project URL and publishable key belong in ignored `.env.local`. Database passwords, access tokens, service-role keys, and secret keys must never enter app code, commits, screenshots, or logs.
+
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
 ## Expo has changed — do not trust your training data
