@@ -16,7 +16,7 @@ Future features will include:
 
 ## Current Version
 
-The app loads its lesson list and details from Supabase. Students can save private study notes for a lesson using a persistent guest account. The microphone and phone-tilt Studio is still planned.
+The app loads its lesson list and details from Supabase. Students can browse and save private notes as guests, or create an email account to keep their notes across devices. Account screens include email-code verification, sign-in, sign-out, and password recovery through Brevo SMTP. The microphone and phone-tilt Studio is still planned.
 
 ## Run on a Phone
 
@@ -39,6 +39,8 @@ On Windows PowerShell, use `npm.cmd` and `npx.cmd` if script execution is blocke
 - Supabase database and guest authentication
 
 See [SUPABASE.md](SUPABASE.md) for setup, data flow, privacy rules, and the phone screenshot steps. [PROGRES.md](PROGRES.md) records the current coursework missions and their verification status.
+
+See [ACCOUNTS.md](ACCOUNTS.md) for guest upgrades, email templates, account privacy, and the account test steps.
 
 ## Developer
 

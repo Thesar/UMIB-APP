@@ -58,7 +58,7 @@ Harta me lart pershkruan rrjedhen kryesore te te mesuarit. Projekti do te perfsh
 - Gjendjet ngarkim, bosh, gabim dhe sukses, bashke me sjelljen kur rrjeti, lejet ose AI nuk jane ne dispozicion.
 - APK per telefon, deklarim te perdorimit te AI, video dhe demonstrim sipas planit te semestrit.
 
-Backend-i per mesimet, llogarite guest dhe shenimet personale me RLS jane ndertuar per detyren e Supabase. Hyrja me email, funksioni me AI, Studio me mikrofon/anim dhe APK-ja mbeten te planifikuara. Shih PROGRES.md per kontrollet e kryera dhe proven ne telefon.
+Backend-i per mesimet, llogarite guest dhe shenimet personale me RLS jane ndertuar per detyren e Supabase. Jane shtuar edhe ekranet opsionale per hyrje me email, verifikim me kod permes Brevo-s dhe rikthim te fjalekalimit; statusi i provave reale eshte ne PROGRES.md. Funksioni me AI, Studio me mikrofon/anim dhe APK-ja mbeten te planifikuara.
 
 ## Si do ta provojme
 

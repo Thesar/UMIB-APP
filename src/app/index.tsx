@@ -11,6 +11,7 @@ import {
 
 import Karta from "../components/Karta";
 import DataState from "../components/DataState";
+import AccountBanner from "../components/AccountBanner";
 import { listLessons } from "../data/lessons";
 import { useRemoteData } from "../hooks/use-remote-data";
 
@@ -34,6 +35,8 @@ export default function HomeScreen() {
         Explore mathematical ideas before turning
         them into sound and motion.
       </Text>
+
+      <AccountBanner />
 
       <Pressable
         accessibilityRole="button"

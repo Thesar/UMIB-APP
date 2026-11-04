@@ -3,28 +3,40 @@ import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { createStudyNote, listStudyNotes } from '@/data/study-notes';
 import { useRemoteData } from '@/hooks/use-remote-data';
+import { useAuth } from '@/providers/AuthProvider';
+import { Link } from 'expo-router';
 
 import DataState from './DataState';
 
 export default function StudyNotes({ lessonId }: { lessonId: string }) {
+  const { user, loading, error } = useAuth();
+  if (loading || error) {
+    return <DataState title={loading ? 'Loading your session…' : 'Session unavailable'} message={error ?? undefined} loading={loading} />;
+  }
+  // A different owner gets fresh component state: no old notes or draft leak.
+  return <StudyNotesForm key={`${lessonId}:${user?.id ?? 'visitor'}`} lessonId={lessonId} isGuest={!user || !!user.is_anonymous} userId={user?.id} />;
+}
+
+function StudyNotesForm({ lessonId, isGuest, userId }: { lessonId: string; isGuest: boolean; userId?: string }) {
+  const sessionReady = !!userId;
   const [body, setBody] = useState('');
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const saveInProgress = useRef(false);
   const loadNotes = useCallback(
-    (signal: AbortSignal) => listStudyNotes(lessonId, signal),
-    [lessonId],
+    (signal: AbortSignal) => listStudyNotes(lessonId, signal, userId),
+    [lessonId, userId],
   );
   const { data: notes, loading, error, retry } = useRemoteData(loadNotes);
 
   async function saveNote() {
-    if (saveInProgress.current || !body.trim()) return;
+    if (saveInProgress.current || !body.trim() || !userId) return;
     saveInProgress.current = true;
     setSaving(true);
     setMessage(null);
 
     try {
-      await createStudyNote(lessonId, body);
+      await createStudyNote(lessonId, body, userId);
       setBody('');
       setMessage('Saved online. Your note will be here when you reopen this lesson.');
       retry();
@@ -41,15 +53,16 @@ export default function StudyNotes({ lessonId }: { lessonId: string }) {
       <Text style={styles.heading}>My study notes</Text>
       <Text style={styles.help}>
         Explain the formula in your own words, or write a question to revisit.
-        Notes are private to this device’s guest account. Clearing app data loses access.
+        {isGuest ? ' Guest notes stay on this device’s temporary account. Clearing app data loses access.' : ' Your private notes are connected to your account and available on your other devices.'}
       </Text>
+      {isGuest ? <Link href={{ pathname: '/account', params: { mode: 'signup' } }} style={styles.link}>Create an account to keep these notes</Link> : null}
       <TextInput
         accessibilityLabel="Study note"
         placeholder="What did you learn about this graph?"
         placeholderTextColor="#94a3b8"
         value={body}
         onChangeText={(text) => { setBody(text); setMessage(null); }}
-        editable={!saving}
+        editable={!saving && !loading && sessionReady}
         multiline
         maxLength={1000}
         textAlignVertical="top"
@@ -58,10 +71,10 @@ export default function StudyNotes({ lessonId }: { lessonId: string }) {
       <Text style={styles.counter}>{body.length}/1000</Text>
       <Pressable
         accessibilityRole="button"
-        accessibilityState={{ disabled: saving || !body.trim(), busy: saving }}
-        disabled={saving || !body.trim()}
+        accessibilityState={{ disabled: saving || !body.trim() || !sessionReady, busy: saving }}
+        disabled={saving || !body.trim() || !sessionReady}
         onPress={saveNote}
-        style={[styles.button, (saving || !body.trim()) && styles.disabled]}
+        style={[styles.button, (saving || !body.trim() || !sessionReady) && styles.disabled]}
       >
         <Text style={styles.buttonText}>{saving ? 'Saving…' : 'Save note'}</Text>
       </Pressable>

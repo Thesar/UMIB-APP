@@ -26,7 +26,7 @@ export default function LessonDetails() {
           loading={loading}
           onRetry={loading ? undefined : retry}
         />
-        <Link href="/" style={styles.back}>Back to lessons</Link>
+        <Link href="/" dismissTo style={styles.back}>Back to lessons</Link>
       </View>
     );
   }
@@ -35,7 +35,7 @@ export default function LessonDetails() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Lesson not found.</Text>
-        <Link href="/" style={styles.back}>
+        <Link href="/" dismissTo style={styles.back}>
           Back to lessons
         </Link>
       </View>
@@ -60,7 +60,7 @@ export default function LessonDetails() {
 
       <StudyNotes key={lesson.id} lessonId={lesson.id} />
 
-      <Link href="/" style={styles.back}>
+      <Link href="/" dismissTo style={styles.back}>
         ← Back to lessons
       </Link>
     </ScrollView>

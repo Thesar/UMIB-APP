@@ -14,6 +14,9 @@ Source documents: `EKIPI.md`, `BISEDAT.md`, and `HARTA.md`. Read them before cha
 - M0: keep this product summary aligned with the source documents.
 - M1/M3: load the existing lesson list and details from Supabase, with loading, empty, failure, and retry states. Never silently replace a failed database read with hard-coded lessons.
 - M2: let a student save a personal study note linked to a lesson and read it after reopening. Use Supabase Auth and owner-based row level security for personal data.
+- Accounts are optional: keep public lesson browsing and guest trial notes. Guest registration links a verified email to the existing user before setting a password, preserving the user ID and notes.
+- Use the shared auth queue and AuthProvider. Clear private note UI when the owner changes, and check the initiating owner ID before note requests. Never use editable user metadata for authorization.
+- Email verification and password recovery use codes from the Supabase templates in supabase/templates, delivered through Brevo SMTP. SMTP credentials stay only in Supabase settings. See ACCOUNTS.md.
 - Keep backend queries outside `src/app/`. Only route components belong there. Do not build the full Studio as part of this database assignment.
 - Commit after each completed step and review the diff. Update `PROGRES.md` with what is implemented, what is verified, what the agent did, and the next step. Do not claim phone verification without a real phone test.
 - Public project URL and publishable key belong in ignored `.env.local`. Database passwords, access tokens, service-role keys, and secret keys must never enter app code, commits, screenshots, or logs.

@@ -9,16 +9,16 @@ Screamulus, plani Free, rajoni Europe (Paris). Konfigurimi lokal eshte ne .env.l
 1. Ekzekuto `npm ci`.
 2. Kopjo .env.example si .env.local. Nga projekti Supabase, kopjo vetem Project URL dhe Publishable key ne dy fushat perkatese. Keto jane vlera publike te aplikacionit. Mos perdor database password, secret key, service_role ose personal access token.
 3. Per nje databaze te re, ekzekuto fajllat ne supabase/migrations sipas renditjes se emrit. Ne projektin ekzistues jane aplikuar; mos i ekzekuto perseri mbi te.
-4. Ne Supabase > Authentication > Sign In / Providers, aktivizo Allow anonymous sign-ins. Ky opsion eshte aktivizuar ne projektin e ekipit me miratimin e tij.
+4. Ne Supabase > Authentication > Sign In / Providers, aktivizo Allow anonymous sign-ins. Per llogarite me email duhen edhe Allow manual linking dhe Confirm email; konfigurimi dhe templates pershkruhen ne ACCOUNTS.md. Keto opsione jane aktivizuar ne projektin e ekipit me miratimin e tij.
 5. Ekzekuto `npx expo start --clear` dhe hape me Expo Go SDK 58. Ne PowerShell mund te perdoret `npx.cmd`.
 
 ## Si rrjedhin te dhenat
 
 - Lista therrret listLessons: nje SELECT ne tabelen lessons, sipas sort_order. Detaji lexon vetem mesimin me id-ne e routes. Nuk ka liste lokale qe fsheh nje deshtim te databazes.
-- Kur hapet nje mesim, Supabase Auth krijon ose rikthen nje llogari guest. Sesioni ruhet ne AsyncStorage ne telefon dhe ne storage-in e shfletuesit ne web. Ne telefon rifreskohet kur aplikacioni eshte aktiv.
+- Kur hapet nje mesim, Supabase Auth rikthen sesionin ekzistues ose krijon nje llogari guest. Sesioni ruhet ne AsyncStorage ne telefon dhe ne storage-in e shfletuesit ne web. Ne telefon rifreskohet kur aplikacioni eshte aktiv.
 - Save note pastron hapesirat ne fillim/fund, kontrollon gjatesine 1-1000 dhe ben INSERT ne study_notes me lesson_id dhe user_id. Suksesi shfaqet vetem pas pergjigjes se databazes. Pastaj lista e shenimeve lexohet perseri.
 - Tabela lessons lejon vetem SELECT nga aplikacioni. study_notes lejon vetem SELECT dhe INSERT nga nje perdorues i autentikuar, me kushtin auth.uid() = user_id. Edhe llogarite guest marrin rolin authenticated. Filtri ne aplikacion nuk e zevendeson RLS-ne.
-- Shenimet jane private per llogarine guest te asaj pajisjeje. Pastrimi i te dhenave te aplikacionit humb qasjen ne ate llogari. Hyrja me email dhe perdorimi ne disa pajisje jane hap i ardhshem.
+- Shenimet jane private per pronarin. Pa email, pastrimi i te dhenave te aplikacionit humb qasjen ne guest-in e asaj pajisjeje. Create account lidh email te verifikuar me te njejtin user ID dhe pastaj vendos fjalekalimin. Sign in ne nje llogari ekzistuese hap shenimet e asaj llogarie; aplikacioni paralajmeron para zevendesimit te nje guest-i me shenime. Shih ACCOUNTS.md dhe statusin e proves reale ne PROGRES.md.
 
 ## Prova ne telefon dhe screenshot-i
 
@@ -37,11 +37,11 @@ npx tsc --noEmit
 npx expo install --check
 ```
 
-## Hapi i ardhshem: email me Brevo
+## Email me Brevo
 
-Ky konfigurim ende nuk eshte aktiv. Llogarite guest nuk dergojne email.
+Brevo SMTP eshte konfiguruar ne Supabase per verifikimin e email-it dhe rikthimin e fjalekalimit. Llogarite guest nuk kerkojne email. Statusi i provave reale shenohet ne PROGRES.md.
 
-Kur te shtohet hyrja me email, Brevo mund te dergoje konfirmimet, magic links dhe resetimin e fjalekalimit per Supabase Auth. Ne Brevo duhet te verifikohet derguesi/domain-i. Te Supabase > Authentication > Emails > SMTP Settings vendosen:
+Supabase Auth dergon kodet permes Brevo-s. Ne Brevo duhet te verifikohet derguesi dhe, kur eshte e mundur, te autentikohet domain-i. Te Supabase > Authentication > Emails > SMTP Settings vendosen:
 
 - Sender email: adresa e verifikuar ne Brevo; sender name: Screamulus.
 - Host: smtp-relay.brevo.com; port: 587 (STARTTLS).
