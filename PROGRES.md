@@ -7,7 +7,8 @@ Perditesuar: 11.11.2026. Provat e shenuara me 04.11 mbeten prova te asaj date.
 - U riprodhuan dy gabimet e raportuara nga profesori duke kontrolluar kodin pa expo-env.d.ts dhe pa types te gjeneruara ne .expo: TS2307 per animated-icon.module.css dhe TS2882 per global.css.
 - U shtua src/types/expo.d.ts ne Git qe ngarkon deklarimet zyrtare expo/types edhe para nisjes se Expo-s. Kontrollet e TypeScript mbeten aktive. Kontrolli normal, kontrolli pa fajllat e gjeneruar dhe lint kaluan.
 - Ne panelin real te Supabase u kontrollua study_notes: RLS eshte aktiv, ekzistojne vetem SELECT dhe INSERT per authenticated, te dyja me auth.uid() = user_id. Nuk kishte policy zhvillimi qe jep qasje ne te gjitha shenimet. Policy publike e lessons lejon vetem leximin e bibliotekes se perbashket.
-- U shtua scripts/verify-note-privacy.mjs per prove API me dy llogari te izoluara, pa filtrin user_id te aplikacionit. Ekzekutimi i 11.11 u ndal te leximi i pare publik me HTTP 522; paneli i projektit raportonte Unhealthy. Kjo nuk eshte prove e kaluar e API-se. Rikuperimi i sherbimit dhe riprovimi jane ende ne pune.
+- U shtua scripts/verify-note-privacy.mjs per prove API me dy llogari guest te izoluara, pa filtrin user_id te aplikacionit. Prova e pare e 11.11 u ndal me HTTP 522 dhe projekti raportonte Unhealthy. Me miratimin e pronarit u be Restart project; paneli pastaj tregoi Healthy.
+- Pas restart-it prova live e API-se kaloi: mesimi publik lexohet; leximi i shenimeve pa autentikim refuzohet; secila llogari ruan dhe lexon vetem shenimin e vet edhe pa filter ne kerkese; kerkesa direkte per rreshtin e tjetrit nuk e kthen ate; INSERT me user_id te tjetrit refuzohet ne te dy drejtimet. Rikthimi i sesionit e gjen perseri shenimin. Dy shenimet e shenuara [J6 API check] mbeten vetem te llogarite testuese. Keto jane prova nga kompjuteri, jo nga dy telefona.
 - CHECKOFF-J6.md ka hapat per dy telefona, shpjegimin e kolonave, screenshot-in dhe tekstin per Hub.
 - Prova ne dy telefona dhe check-off-i ne klase ende nuk jane konfirmuar per J6. Nje prove API nuk i zevendeson keto.
 
@@ -53,4 +54,4 @@ Prova e pare deshtoi me 535 Authentication failed ne Auth Logs. Pas krijimit te 
 
 ## Hapi tjeter
 
-Te rikuperohet sherbimi Supabase nga statusi Unhealthy dhe te riprovohet API-ja. Pastaj te provohen dy llogari ne dy telefona, te merret screenshot-i real me shenimin e ruajtur dhe te dorezohet me linkun e repository-t per J6. J5 dhe J6 kerkojne check-off me prezence ne klase. Studio me mikrofon/anim mbetet hap i ardhshem i produktit.
+Te provohen dy llogari ne dy telefona, te merret screenshot-i real me shenimin e ruajtur dhe te dorezohet me linkun e repository-t per J6. J5 dhe J6 kerkojne check-off me prezence ne klase. Studio me mikrofon/anim mbetet hap i ardhshem i produktit.
