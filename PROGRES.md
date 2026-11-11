@@ -1,6 +1,13 @@
 # Progresi - Screamulus
 
-Data: 04.11.2026.
+Perditesuar: 11.11.2026. Provat e shenuara me 04.11 mbeten prova te asaj date.
+
+## J6 - pergatitja me 11.11.2026
+
+- U riprodhuan dy gabimet e raportuara nga profesori duke kontrolluar kodin pa expo-env.d.ts dhe pa types te gjeneruara ne .expo: TS2307 per animated-icon.module.css dhe TS2882 per global.css.
+- U shtua src/types/expo.d.ts ne Git qe ngarkon deklarimet zyrtare expo/types edhe para nisjes se Expo-s. Nuk u fshihen kontrollet e TypeScript dhe nuk u perdor ts-ignore. Kontrolli normal, kontrolli pa fajllat e gjeneruar dhe lint kaluan.
+- Ne panelin real te Supabase u kontrollua study_notes: RLS eshte aktiv, ekzistojne vetem SELECT dhe INSERT per authenticated, te dyja me auth.uid() = user_id. Nuk kishte policy zhvillimi qe jep qasje ne te gjitha shenimet. Policy publike e lessons lejon vetem leximin e bibliotekes se perbashket.
+- Prova ne dy telefona dhe check-off-i ne klase ende nuk jane konfirmuar per J6. Nje prove API nuk i zevendeson keto.
 
 ## Cka punon
 
