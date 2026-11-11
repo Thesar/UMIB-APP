@@ -5,8 +5,10 @@ Perditesuar: 11.11.2026. Provat e shenuara me 04.11 mbeten prova te asaj date.
 ## J6 - pergatitja me 11.11.2026
 
 - U riprodhuan dy gabimet e raportuara nga profesori duke kontrolluar kodin pa expo-env.d.ts dhe pa types te gjeneruara ne .expo: TS2307 per animated-icon.module.css dhe TS2882 per global.css.
-- U shtua src/types/expo.d.ts ne Git qe ngarkon deklarimet zyrtare expo/types edhe para nisjes se Expo-s. Nuk u fshihen kontrollet e TypeScript dhe nuk u perdor ts-ignore. Kontrolli normal, kontrolli pa fajllat e gjeneruar dhe lint kaluan.
+- U shtua src/types/expo.d.ts ne Git qe ngarkon deklarimet zyrtare expo/types edhe para nisjes se Expo-s. Kontrollet e TypeScript mbeten aktive. Kontrolli normal, kontrolli pa fajllat e gjeneruar dhe lint kaluan.
 - Ne panelin real te Supabase u kontrollua study_notes: RLS eshte aktiv, ekzistojne vetem SELECT dhe INSERT per authenticated, te dyja me auth.uid() = user_id. Nuk kishte policy zhvillimi qe jep qasje ne te gjitha shenimet. Policy publike e lessons lejon vetem leximin e bibliotekes se perbashket.
+- U shtua scripts/verify-note-privacy.mjs per prove API me dy llogari te izoluara, pa filtrin user_id te aplikacionit. Ekzekutimi i 11.11 u ndal te leximi i pare publik me HTTP 522; paneli i projektit raportonte Unhealthy. Kjo nuk eshte prove e kaluar e API-se. Rikuperimi i sherbimit dhe riprovimi jane ende ne pune.
+- CHECKOFF-J6.md ka hapat per dy telefona, shpjegimin e kolonave, screenshot-in dhe tekstin per Hub.
 - Prova ne dy telefona dhe check-off-i ne klase ende nuk jane konfirmuar per J6. Nje prove API nuk i zevendeson keto.
 
 ## Cka punon
@@ -51,4 +53,4 @@ Prova e pare deshtoi me 535 Authentication failed ne Auth Logs. Pas krijimit te 
 
 ## Hapi tjeter
 
-Te merret nje screenshot real nga telefoni ku shihet shenimi i ruajtur dhe te dorezohet bashke me linkun e repository-t. Studio me mikrofon/anim mbetet hap i ardhshem i produktit.
+Te rikuperohet sherbimi Supabase nga statusi Unhealthy dhe te riprovohet API-ja. Pastaj te provohen dy llogari ne dy telefona, te merret screenshot-i real me shenimin e ruajtur dhe te dorezohet me linkun e repository-t per J6. J5 dhe J6 kerkojne check-off me prezence ne klase. Studio me mikrofon/anim mbetet hap i ardhshem i produktit.

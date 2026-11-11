@@ -42,6 +42,8 @@ See [SUPABASE.md](SUPABASE.md) for setup, data flow, privacy rules, and the phon
 
 See [ACCOUNTS.md](ACCOUNTS.md) for guest upgrades, email templates, account privacy, and the account test steps.
 
+See [CHECKOFF-J6.md](CHECKOFF-J6.md) for the two-phone privacy demonstration, the live API check, and the submission screenshot. Current service and test status is recorded in [PROGRES.md](PROGRES.md).
+
 ## Developer
 
 University coursework project by Thesar and Amra. See [EKIPI.md](EKIPI.md) for team details.
